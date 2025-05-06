@@ -2,7 +2,7 @@
 After Unity steals focus away from your IDE, this script will refocus your IDE automatically.
 
 ### What's the problem?
-When using the Unity Editor on Linux, Unity will automatically focus itself after refreshing the assets or recompiling the C# assemblies. This is particularly problematic if you want to use Rider's `Automatically refresh assets in Unity` feature to have assets refresh in the background. When saving a script, Unity it will raise itself above every other window, including your IDE.
+When using the Unity Editor on Linux, Unity [will automatically focus itself](https://discussions.unity.com/t/anyone-know-of-a-way-to-restrict-the-editor-window-from-stealing-focus-and-raising-on-window-events/901340) after refreshing the assets or recompiling the C# assemblies. This is particularly problematic if you want to use Rider's `Automatically refresh assets in Unity` feature to have assets refresh in the background. When saving a script, Unity it will raise itself above every other window, including your IDE.
 
 There's unfortunately no way to stop it from happening. The best option is to just pull the IDE in front of Unity as fast as possible. That being said, it's a surprisingly difficult issue to fix using Gnome 42 + Wayland. It requires installing two Gnome extensions to expose methods for window manipulation.
 
